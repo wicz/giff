@@ -10,5 +10,13 @@ describe Giff::Formatters::HTMLFormatter do
       expect(formatter.format_output).to eq(html_output)
     end
   end
+
+  describe "#to_html" do
+    it "adds to_html to Giff::Diff" do
+      diff = Giff::Diff.new("foo", "bar")
+
+      expect(diff).to respond_to(:to_html)
+    end
+  end
 end
 
