@@ -5,7 +5,7 @@ module Giff::Formatters
     end
 
     def format_output
-      clean_command_output(@diff.diff)
+      clean_command_output
     end
 
     def self.format_output(diff)
@@ -14,8 +14,8 @@ module Giff::Formatters
 
     private
 
-    def clean_command_output(output)
-      output.split("\n")
+    def clean_command_output
+      @diff.diff.split("\n")
             .reject { |line| line.match(/^(\+\+\+|---|@@|diff|index)/) }
             .join("\n")
     end

@@ -1,6 +1,7 @@
 require "giff/version"
 require "giff/diff"
 require "giff/formatters/base_formatter"
+require "giff/formatters/html_formatter"
 
 module Giff
   extend self
