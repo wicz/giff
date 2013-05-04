@@ -1,5 +1,6 @@
 require "giff/version"
 require "giff/diff"
+require "giff/formatters/base_formatter"
 
 module Giff
   extend self
@@ -14,6 +15,10 @@ module Giff
      --ignore-space-change  \
      --ignore-space-at-eol  \
      --ignore-all-space"
+  end
+
+  def default_formatter
+    Giff::Formatters::BaseFormatter
   end
 end
 

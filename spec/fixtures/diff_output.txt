@@ -1,0 +1,6 @@
+diff --git a/s1 b/s2
+index e5db1d9..21a6948 100644
+--- a/s1
++++ b/s2
+@@ -1 +1 @@
+Hello [-Alice-]{+Bob+}
