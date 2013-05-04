@@ -26,14 +26,10 @@ module Giff
             .join("\n")
     end
 
-    def git_bin
-      %x(which git).chomp
-    end
-
     def execute_command
       base_file = create_tempfile(@base)
       head_file = create_tempfile(@head)
-      output = %x(#{git_bin} diff --word-diff=plain --no-color #{base_file.path} #{head_file.path})
+      output = %x(#{Giff.git_bin} diff #{Giff.default_options} #{base_file.path} #{head_file.path})
 
       clean_command_output(output)
     ensure

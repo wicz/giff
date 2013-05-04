@@ -1,4 +1,4 @@
-require "giff/diff"
+require "giff"
 
 describe Giff::Diff do
   describe "#to_s" do
