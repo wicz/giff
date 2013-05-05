@@ -8,9 +8,11 @@ Gem::Specification.new do |spec|
   spec.version       = Giff::VERSION
   spec.authors       = ["Vinicius Horewicz"]
   spec.email         = ["vinicius@horewi.cz"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{Giff uses git-diff to compare two strings.
+                          The motivation for creating it was to enable
+                          word per word diff. }
+  spec.summary       = %q{A Ruby wrapper around git-diff.}
+  spec.homepage      = "https://github.com/wicz/giff"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

@@ -1,6 +1,7 @@
 # Giff
 
-TODO: Write a gem description
+Giff is as Ruby wrapper around the `git-diff` command. It enables
+comparing two strings on a word per word basis.
 
 ## Installation
 
